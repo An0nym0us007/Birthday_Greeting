@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100607">
+<title>Happy Birthday ❤️</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<canvas id="confetti"></canvas>
+
+<div class="balloon one"></div>
+<div class="balloon two"></div>
+<div class="balloon three"></div>
+
+
+<main class="page">
+
+  <!-- COVER -->
+  <section id="cover">
+    <p class="eyebrow">A little surprise awaits</p>
+
+    <h1>
+      It's your day,
+      <em id="coverName">Janice!</em>
+    </h1>
+
+    <button class="gift-button" id="openGift"
+      aria-label="Open your birthday surprise">
+      <span class="gift-icon">🎁</span>
+    </button>
+
+    <div class="tulips">🌷 💐 🌷</div>
+
+    <p>Tap to unwrap your birthday surprise, <span id="coverNameText">Janice</span>!</p>
+    <p style="font-size:12px">Just for you ♡</p>
+  </section>
+
+  <!-- MAIN GREETING -->
+  <div id="mainContent" class="hidden">
+
+    <section class="intro">
+      <p class="eyebrow">Today is all about you</p>
+      <h1>Happy Birthday <em id="greetingName">Janice!</em></h1>
+      <div class="divider"></div>
+
+      <p>
+        May your day be filled with love, laughter, and beautiful memories.
+        You make the world brighter just by being yourself. 
+        May this new chapter bring you happiness, courage, and countless
+        reasons to smile. You deserve all the wonderful things life has
+        to offer. ❤️
+      </p>
+
+      <p style="color:var(--pink)">Today, tomorrow, and always.</p>
+    </section>
+
+    <!-- INTERACTIVE LETTER -->
+    <section id="letterSection">
+      <p class="eyebrow">Words from the heart</p>
+      <h2>A Letter <em>For You</em></h2>
+      <p>Some things are better written from the heart.</p>
+
+      <div class="envelope-scene">
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+
+          <article class="letter">
+            <div class="letter-inner">
+              <div style="font-size:25px;color:#c52c43">♡</div>
+              <h3>Dear <span id="letterName">Janice</span>,</h3>
+
+              <p>
+                On your special day, I just want to remind you how
+                incredible you are. Thank you for being you and for
+                bringing happiness to the people around you.
+                I know you've been through a lot last year, yet here you are, still triving, and still standing.
+                You're stronger than you think, and I admire your resilience and courage. 
+              </p>
+
+              <p>
+                I hope you always find reasons to smile, strength to
+                follow your dreams, and people who remind you how
+                special you are. May this year be full of wonderful
+                surprises and unforgettable moments. I'm so proud of you ate ko!
+              </p>
+
+              <p>Happy Birthday, Janice! ❤️</p>
+              <p><em>From your mortal enemy: ♡</em></p>
+            </div>
+          </article>
+
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+
+          <button class="envelope-heart" id="envelopeButton"
+            aria-label="Open the birthday letter"
+            aria-expanded="false">♥</button>
+        </div>
+      </div>
+
+      <p class="envelope-hint" id="envelopeHint">
+        Tap the heart to open your letter ♡
+      </p>
+    </section>
+
+    <!-- BIRTHDAY CAKE -->
+    <section id="cakeSection">
+      <p class="eyebrow">Make a little wish</p>
+      <h2>A Cake <em>Just for You</em></h2>
+      <p>Tap each candle to blow it out. Don't forget your wish! ✨</p>
+
+      <div class="card">
+        <div class="cake-area">
+          <div class="cake" aria-label="Interactive birthday cake">
+            <div class="cake-base"></div>
+            <div class="cake-drip"></div>
+            <div class="cake-top"></div>
+
+            <div class="candles">
+              <button class="candle" aria-label="Blow out candle 1">
+                <span class="flame"></span>
+              </button>
+              <button class="candle" aria-label="Blow out candle 2">
+                <span class="flame"></span>
+              </button>
+              <button class="candle" aria-label="Blow out candle 3">
+                <span class="flame"></span>
+              </button>
+              <button class="candle" aria-label="Blow out candle 4">
+                <span class="flame"></span>
+              </button>
+              <button class="candle" aria-label="Blow out candle 5">
+                <span class="flame"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <p class="wish-message" id="wishMessage" aria-live="polite">
+          Your birthday wish is waiting! 🕯️
+        </p>
+        <p id="candleCount" style="font:12px Arial,sans-serif">
+          5 candles still glowing
+        </p>
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section id="gallerySection">
+      <p class="eyebrow">Little moments, big memories</p>
+      <h2><em>Memories</em></h2>
+      <p>A little gallery of moments worth remembering. 📸</p>
+
+      <div class="gallery-frame">
+        <img id="galleryImage"
+          src="https://placehold.co/600x800/260c12/ffe5e8?text=Your+Photo+1"
+          alt="Birthday memory">
+        <div class="gallery-caption" id="galleryCaption">
+          A memory to keep forever ♡
+        </div>
+      </div>
+
+      <div class="gallery-controls">
+        <button class="secondary-button" id="prevPhoto"
+          aria-label="Previous photo">← Previous</button>
+        <span class="gallery-count" id="galleryCount">1 / 4</span>
+        <button class="secondary-button" id="nextPhoto"
+          aria-label="Next photo">Next →</button>
+      </div>
+
+      
+    </section>
+
+    <section class="tulips_bouquet">
+      <div>
+    
+        <h1><em>Flowers</em> for you</h1>
+      
+    <div class="container">
+   
+        <p>Click the picture to reveal a special quote ♡</p>
+
+        <!-- Clickable Picture -->
+        <img
+           src="Birthday Greeting/image/Tulips.png"  
+          alt="A bouquet of flowers" style="width:240px;max-width:400px" class="click-picture" id="picture">
+          
+        <!-- Quote Box -->
+        <div class="quote-box" id="quoteBox">
+            <p id="quote">
+                "A tulip doesn't strive to impress anyone. It just blooms, effortlessly, and that is enough. Just like you."
+            </p>
+        </div>
+      
+   
+
+    </section>
+    
+    <!-- HIDDEN SURPRISE -->
+    <section id="surpriseSection">
+      <p class="eyebrow">One last thing...</p>
+      <h2>A Little <em>Surprise</em></h2>
+      <p>Because someone as special as you deserves a little extra magic.</p>
+
+      <div class="gift-card">
+        <div class="ribbon">🎀</div>
+        <h3 style="color:var(--pink)">Just for you</h3>
+        <p>A little gift for you.</p>
+
+        <button class="primary-button" id="revealGift">
+          🎁 Reveal Your Gift
+        </button>
+
+        <div id="surpriseContent" class="hidden">
+          <div class="divider"></div>
+          <h3 style="color:var(--pink)">Your Special Gift ❤️</h3>
+          <p id="giftMessage">
+            Your gift is a reminder that you are appreciated,
+            loved, and worthy of beautiful things.
+          </p>
+          <p>May your year be as wonderful as you are!</p>
+          <span style="font-size:30px">💝 ✨ 🌹</span>
+        </div>
+      </div>
+    </section><div class="container">
+
+      
+    <footer>
+     
+      <p>Happy Birthday! 🎂</p>
+    </footer>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
