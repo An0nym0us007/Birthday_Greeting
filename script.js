@@ -40,7 +40,7 @@ const birthday = {
 
 /* Set the recipient's name */
 
-document.title = `Happy Birthday, ${birthday.name}!`;
+
 
 document.getElementById("coverName").textContent =
   birthday.name + "!";
