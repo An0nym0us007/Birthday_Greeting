@@ -32,6 +32,26 @@ const birthday = {
       src: "Birthday Greeting/image/photo 6.gif",
       caption: "SHS moments😎"
     },
+
+    {
+      src: "Birthday Greeting/image/photo 7.jpg",
+      caption: "Sa cheerdance to eh"
+
+      
+    },
+
+     {
+      src: "Birthday Greeting/image/photo 8.jpg",
+      caption: "Isa pa "
+
+      
+    },
+
+    {
+      src: "Birthday Greeting/image/photo 9.jpg",
+      caption: "Ano to?😭 HAHAHA"
+      
+    },
   ],
 
   giftMessage:
